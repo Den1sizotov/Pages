@@ -1,0 +1,83 @@
+@import "_vars.scss";
+.button-primory {
+  font-family: $fontfamilySecondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 150%;
+  letter-spacing: 0.57px;
+  text-transform: capitalize;
+  color: $primary;
+  border: 2px solid $secondaryBright;
+  border-radius: 0px;
+  //padding: 18.5px 52px;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+    &:hover{
+      background: $primary;
+      transition: 0.3s;
+      color: #fff;
+  }
+}
+.button-primory_bg {
+  font-family: $fontfamilySecondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 150%;
+  letter-spacing: 0.57px;
+  text-transform: capitalize;
+  color: #fff;
+  border: 2px solid $secondaryBright;
+  border-radius: 0px;
+  padding: 18.5px 52px;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  flex: 0 0 auto;
+    &:hover{
+      background: $primary;
+      transition: 0.3s;
+      color: $secondaryBright;
+  }
+}
+.section-title {
+  font-family: $fontfamilySecondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 120%;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  &::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: $secondaryBright;
+  }
+  @include adaptiv_fonts(42,30)
+}
+.section-title_yellow {
+  font-family: $fontfamilySecondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 120%;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  &::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: $primary;
+  }
+  @include adaptiv_fonts(42,30)
+}

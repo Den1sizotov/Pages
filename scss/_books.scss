@@ -1,0 +1,96 @@
+@import "_vars.scss";
+.books {
+  margin: 0px 0px 90px 0px;
+  padding: 16px 0 59px 0;
+  @media (max-width: 500px){
+    margin: 0px 0px 0px 0px;
+  }
+}
+.books-container {
+		// .books-container__section-title
+		&__section-title {
+      align-items: center;
+      margin: 0px 0px 96px 0px;
+      color: $primary;
+      @media (max-width: 500px){
+         margin: 0px 0px 60px 0px;
+      }
+		}
+}
+.container {
+}
+.items-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+  gap: 20px;
+  @media (max-width: 500px){
+    grid-template-columns: repeat(auto-fit, minmax(290px,1fr));
+  }
+}
+.item-books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(268px,1fr));
+  align-items: center;
+}
+.image-books {
+  position: relative;
+  padding: 0 0 134% 0;
+		// .image-books__img
+		&__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      filter: drop-shadow(0px 0px 11px rgba(0, 0, 0, 0.2));
+		}
+}
+.content-item-books {
+  padding: 38px 28px 26px 30px;
+		// .content-item-books__title
+		&__title {
+      font-family: $fontfamilySecondary;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 120%;
+      letter-spacing: 0.32px;
+      color: $primary;
+      margin: 0px 0px 7px 0px;
+		}
+		// .content-item-books__price
+		&__price {
+      font-family: $fontfamilyPrimory;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 150%;
+      color: $secondaryBright;
+      margin: 0px 0px 17px 0px;
+		}
+		// .content-item-books__text
+		&__text {
+      font-family: $fontfamilyPrimory;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 150%;
+      color: $lightBlack;
+      margin: 0px 0px 13px 0px;
+		}
+		// .content-item-books__book
+		&__book {
+      font-family: $fontfamilySecondary;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height:120%;
+      color: $primary;
+      margin: 0px 0px 27px 0px;
+		}
+		// .content-item-books__button-primory
+		&__button-primory {
+      padding: 18.5px 52px;
+		}
+}

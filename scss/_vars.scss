@@ -1,0 +1,18 @@
+$maxWidth: 1440;
+//Adaptiv fonts
+@mixin adaptiv_fonts($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+ font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+$fontfamilyPrimory:'Inter';
+$fontfamilySecondary:'cardo';
+//Сolors
+$primary:#1B3764;
+$secondaryBright:#FFCA42;
+$black:#000;
+$lightBlack:#969AA0;
+$gray:#000;
+$bgSection:#F5F8FC;
+$bgBody:#FFFFFF;
+//background: linear-gradient(90deg, rgba(255,202,66,1) 50%, rgba(255,255,255,1) 50%);

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400");
+@import url("https://fonts.googleapis.com/css?family=Cardo:400");
+@import "_nullstyle.scss";
+@import "_header.scss";
+@import "_main.scss";
+@import "_footer.scss";
+@import "_vars.scss";
+@import "_example.scss";
+body{
+  font-family: $fontfamilyPrimory;
+  color: $primary;
+  font-size: 19px;
+  background: $bgBody;
+}
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.full-screen{
+  padding: 0 0 100px 0;
+  background: $primary;
+  margin: 0px 0px 110px 0px;
+  @media (max-width: 500px){
+    padding: 0 0 60px 0;
+    margin: 0px 0px 60px 0px;
+  }
+}
+//@import "bootstrap.grid.@media.scss";
+
+//SNIPPETS
+//scss=======================
+
+//Адаптив изобаржений - "im"
+//Внешний нижний отступ - "mb"
+//Набор свойств flex - fl
+//Адаптивные грид колонки - grg
+//Действия при наведении - hov
+//scss========================
+
+//html========================
+
+//Строение сайта - site
+//Меню шапки - nav1
+
+//html========================
+
+@media (max-width: 1300px){
+  .container{
+    padding: 0 15px;
+  }
+}
+@media (max-width: px){
+
+}
+@media (max-width: px){
+
+}
+@media (max-width: px){
+
+}
+@media (max-width: px){
+
+}
+
+//========================================
+
+@media (min-width: 1300px){
+  .container{
+    padding: 0;
+  }
+}
+@media (min-width: px){
+
+}
+@media (min-width: px){
+
+}
+@media (min-width: px){
+
+}
+@media (min-width: px){
+
+}
